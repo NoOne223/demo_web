@@ -1,0 +1,420 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    --var--first--color: #F08080;
+    --var--second--color: #FF82AB;
+    --var--third--color: #00CED1;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 5px;
+    min-width: 150px;
+    border: 1px solid transparent;
+}
+
+/* Basic styles */
+.w-full{
+    width: 100%;
+}
+
+.h-full{
+    height: 100%;
+}
+
+.h-screen{
+    height: 100vh;
+}
+
+.text-sm{
+    font-size: 1rem;
+}
+
+.text-md{
+    font-size: 1.5rem;
+}
+
+.text-lg{
+    font-size: 3rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-end{
+    text-align: end;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.text-color-1{
+    color: var(--var--first--color);
+}
+
+.text-color-2{
+    color: var(--var--second--color);
+}
+
+.text-color-3{
+    color: var(--var--third--color);
+}
+
+.padding-inline{
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-auto{
+    flex: 0 1 auto;
+}
+
+.flex-1{
+    flex: 1 1 auto;
+}
+
+.flex-2-items{
+    width: 45%;
+}
+
+.flex-3-items{
+    width: 33%;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.grid-layout-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-sm{
+    gap: 1rem;
+}
+
+.gap-md{
+    gap: 1.5rem;
+}
+
+.list-none{
+    list-style: none;
+    padding: 0;
+}
+
+.container{
+    max-width: 1530px;
+    margin: auto;
+    padding: 10px;
+}
+
+.space{
+    margin-top: 60px;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.mt-0{
+    margin-top: 0;
+}
+
+/* Styling */
+.nav-menu{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.logo{
+    height: 65px;
+}
+
+.menu-link{
+    padding: 1rem;
+}
+
+.menu-link:hover{
+    color: var(--var--third--color);
+}
+
+.menu-link.active{
+    font-weight: bold;
+    color: var(--var--third--color);
+}
+
+.banner-slick .slick-next{
+    right: 150px;
+}
+
+.banner-slick .slick-prev{
+    left: 150px;
+    z-index: 1;
+}
+
+.banner-slick .slick-prev:before, .banner-slick .slick-next:before{
+    font-size: 50px;
+    font-family: 'FontAwesome';
+}
+
+.banner-slick .slick-prev:before{
+    content: '\f191';
+}
+
+.banner-slick .slick-next:before{
+    content: '\f152';
+}
+
+.banner-slick .slick-dots{
+    bottom: 10px;
+    text-align: start;
+    max-width: 1530px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.banner-slick .slick-dots li{
+    margin: 0px 15px;
+}
+
+.banner-slick .slick-dots li.slick-active button:before{
+    opacity: 1;
+    color: var(--var--third--color);
+}
+
+.banner-slick .slick-dots li button:before{
+    font-size: 14px;
+    color: transparent;
+    margin-right: 15px;
+    border: 2px solid var(--var--first--color);
+    border-radius: 50%;
+}
+
+.slick-item img{
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.news-img{
+    min-height: 245px;
+}
+
+.image-banner-1{
+    position: relative;
+}
+
+.image-banner-1 img{
+    height: 850px;
+    object-fit: contain;
+}
+
+.btn{
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.secondary-btn{
+    background-color: var(--var--second--color);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.secondary-btn:hover{
+    background-color: var(--var--third--color);
+}
+
+.grow-content{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    max-width: 600px;
+    height: fit-content;
+}
+
+.board-content{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.link{
+    position: relative;
+}
+
+.link i{
+    position: absolute;
+    right: -15px;
+    top: 0px;
+    transition: right 0.3s ease-in-out;
+}
+
+.link:hover{
+    color: var(--var--third--color);
+}
+
+.link:hover i{
+    right: -20px;
+}
+
+.story-content{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    max-width: 600px;
+    height: fit-content;
+    right: 0;
+}
+
+.footer-layout{
+    background-color: var(--var--first--color);
+    padding: 30px;
+}
+
+.contact{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+.contact-item{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.contact-child {
+    position: absolute;
+    right: 100px;
+    opacity: 0;
+    bottom: 0;
+    min-width: 150px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    transition: right 0.5s ease-in-out;
+}
+
+.contact-child li{
+    margin-bottom: 1.5rem;
+}
+
+.contact-item:hover .contact-child{
+    right: 40px;
+    opacity: 1;
+}
+
+.contact-link:hover{
+    color: var(--var--third--color);
+}
+
+.facebook:hover{
+    background-color: #3B5998;
+    color: white;
+}
+
+.insta:hover{
+    background: radial-gradient(circle at 30% 30%, #FD1D1D, #F56040, #FCAF45, #833AB4, #405DE6);
+    color: white;
+}
+
+.shop:hover{
+    color: white;
+    background-color: #5bb837;
+}
+
+.product-board{
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.product-board:hover .product-btn-area{
+    bottom: 0;
+}
+
+.product-board img{
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-desc{
+    padding: 10px;
+}
+
+.product-btn-area{
+    column-gap: 1px;
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    transition: bottom 0.5s ease-in-out;
+}
+
+.product-btn{
+    width: 50%;
+    border-radius: 0;
+}
