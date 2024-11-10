@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atiso</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./assets/favicon_io (1)/favicon.ico">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/animation.css">
 </head>
 <body>
     <header>
@@ -32,63 +34,64 @@
                         <a class="menu-link" href="/">Phát triển bền vững</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-link" href="/">Vùng nguyên liệu</a>
+                        <a class="menu-link" href="/vungnguyenlieu.html">Vùng nguyên liệu</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section id="section1" class="h-screen">
-            <img class="w-full h-full" src="./assets/image/product-banner.jpg" alt="Product">
+        <section id="section1">
+            <div class="banner-slick product-slide h-full">
+                <div class="slick-item">
+                    <img class="w-full h-full" src="./assets/image/chanhvang-slide.png" alt="Slick Image">
+                </div>
+                <div class="slick-item">
+                    <img class="w-full h-full" src="./assets/image/bacha-slide.png" alt="Slick Image">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="product-slide-content">
+                    <div>
+                        <div class="flex items-center">
+                            <div class="product-img w-half">
+                                <img class="w-full" src="./assets/image/SPCHANHVANG.png" alt="Chanh vang">
+                            </div>
+                            <div class="product-des w-half">
+                                <h4 class="text-md uppercase">Chanh vàng</h4>
+                                <p>Giới thiệu sản phẩm</p>
+                                
+                            </div>
+                        </div>
+                        <div class="product-benefit">
+                            <h2 class="uppercase">benefit</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center">
+                            <div class="product-img w-half">
+                                <img class="w-full" src="./assets/image/SPBACHA.png" alt="Bac Ha">
+                            </div>
+                            <div class="product-des w-half">
+                                <h4 class="text-md uppercase">Bạc hà</h4>
+                                <p>Giới thiệu sản phẩm</p>
+                            </div>
+                        </div> 
+                        <div class="product-benefit">
+                            <h2 class="uppercase">benefit</h2>
+                        </div>
+                    </div> 
+                </div>
+            </div>
         </section>
 
         <section id="section2" class="space">
-            <div class="container">
-                <h2 class="uppercase">Sản phẩm thô</h2>
-                <div class="grid-layout-4 gap-lg">
-                    <div class="product-board">
-                        <img class="w-full" src="./assets/image/slick-img2.jpg" alt="Product image">
-                        <div class="product-desc">
-                            <h4 class="mt-0 text-md">Sản phẩm 1</h4>
-                            <p>
-                                Mô tả của sản phẩm
-                            </p>
-                            <p>
-                                <strong>Giá của sản phẩm</strong>
-                            </p>
-                        </div>
-                        <div class="product-btn-area flex">
-                            <button type="button" class="product-btn add-cart secondary-btn flex-1">Thêm vào giỏ<i class="fa-solid fa-cart-plus"></i></button>
-                            <button type="button" class="product-btn buy secondary-btn flex-1">Mua ngay</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </section>
 
         <section id="section3" class="space">
-            <div class="container">
-                <h2 class="uppercase">Sản phẩm đã chế biến</h2>
-                <div class="grid-layout-4 gap-lg">
-                    <div class="product-board">
-                        <img class="w-full" src="./assets/image/slick-img3.jpg" alt="Product image">
-                        <div class="product-desc">
-                            <h4 class="mt-0 text-md">Sản phẩm 1</h4>
-                            <p>
-                                Mô tả của sản phẩm
-                            </p>
-                            <p>
-                                <strong>Giá của sản phẩm</strong>
-                            </p>
-                        </div>
-                        <div class="product-btn-area flex">
-                            <button type="button" class="product-btn add-cart secondary-btn">Thêm vào giỏ<i class="fa-solid fa-cart-plus"></i></button>
-                            <button type="button" class="product-btn buy secondary-btn">Mua ngay</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </section>
 
         <section id="section4" class="space">
